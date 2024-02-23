@@ -1,11 +1,7 @@
 const request = require("request");
 
-const commandLineContent = process.argv[2]
-  ? process.argv[2].toLowerCase()
-  : undefined;
-
 // Declares a function named fetchBreedDescription which takes two parameters: breedName and callback
-const fetchBreedDescription = function (breedName, callback) {
+const fetchBreedDescription = function(breedName, callback) {
   // Checks if breedName is truthy, if so, converts it to lowercase; otherwise, sets it to undefined
   breedName = breedName ? breedName.toLowerCase() : undefined;
   // Makes a request to the specified URL using the request function
